@@ -1,11 +1,16 @@
 import "./App.css";
 import { ToastProvider } from "./features/toast/components/ToastProvider";
-import { ExampleComponent } from "./widget/ExampleComponent";
+import { ModalExampleComponent } from "./widget/ModalExampleComponent";
+import { ToastExampleComponent } from "./widget/ToastExampleComponent";
 
 function App() {
     return (
         <ToastProvider>
-            <ExampleComponent />
+            <ToastExampleComponent />
+
+            <br />
+
+            <ModalExampleComponent />
         </ToastProvider>
     );
 }
